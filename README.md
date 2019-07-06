@@ -1,7 +1,7 @@
 # Google Play Parser
 Ruby Script parser Google Play and get information about application
 # Start
-1. Clone repo `https://github.com/kmaksimovv/parser_play_google.git`
+1. Clone repo `git clone https://github.com/kmaksimovv/parser_play_google.git`
 2. `bundle install`
 
 # Settings database if required
