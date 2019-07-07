@@ -6,3 +6,5 @@ gem 'httpclient'
 gem 'nokogiri'
 gem 'pg'
 gem 'rspec'
+gem 'webmock'
+gem 'hashdiff', ['>= 1.0.0.beta1', '< 2.0.0']
