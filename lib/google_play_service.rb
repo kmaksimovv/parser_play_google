@@ -5,7 +5,7 @@ require 'uri'
 module GooglePlayService
   class ParsePageApp
     attr_reader :doc
-    attr_accessor :name, :ref_icon, :category, :rating, :dowloads, :author, :author_email 
+    attr_accessor :name, :ref_icon, :category, :rating, :dowload_count, :author, :author_email 
 
     def initialize(url)
       @doc = parse_page_html(url)
@@ -18,7 +18,7 @@ module GooglePlayService
       self.ref_icon = app_ref_icon
       self.category = app_category
       self.rating = app_rating
-      self.dowloads = app_total_dowloads
+      self.dowload_count = app_total_dowloads
       self.author = app_website_developer
       self.author_email = app_email_developer
     end
