@@ -9,4 +9,4 @@ gem 'rspec'
 gem 'webmock'
 gem 'hashdiff', ['>= 1.0.0.beta1', '< 2.0.0']
 gem 'sequel'
-gem 'env'
+gem 'dotenv'

@@ -1,17 +1,13 @@
 require 'sequel'
-
-host = 'localhost'
-dbadapter = 'postgres'
-dbname = 'google_play_app'
-user = 'postgres'
-passwd = 'postgres'
+require 'dotenv/load'
 
 #create database
-Sequel.connect(adapter: :"#{dbadapter}", user: "#{user}", password: "#{passwd}", host: "#{host}") {|db| db.execute "CREATE DATABASE #{dbname}"}
+Sequel.connect(adapter: :"#{ENV['DB_ADAPTER']}", user: ENV['DB_USER'], password: ENV['DB_PASS'], host: ENV['DB_HOST']) {|db| db.execute "CREATE DATABASE #{ENV['DB_BASE']}"}
 
 #create tables
-DB = Sequel.connect(adapter: :"#{dbadapter}", user: "#{user}", password: "#{passwd}", host: "#{host}", database: "#{dbname}")
+DB = Sequel.connect(adapter: :"#{ENV['DB_ADAPTER']}", user: ENV['DB_USER'], password: ENV['DB_PASS'], host: ENV['DB_HOST'], database: ENV['DB_BASE'])
 
+#migration
 DB.create_table :apps do
   primary_key :id
   String :name, unique: true, null: false
