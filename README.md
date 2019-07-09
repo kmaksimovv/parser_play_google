@@ -1,4 +1,4 @@
-# Google Play Parser
+### Google Play Parser
 Ruby Script parser Google Play and get information about application
 
 # For a start 
