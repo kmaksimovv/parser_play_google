@@ -23,3 +23,22 @@ Ruby Script parser Google Play and get information about application
 
 ## Contributing
 Bug reports and pull requests are welcome on GitHub at `https://github.com/kmaksimovv/parser_play_google`.
+
+## Api
+1. Run server.rb
+  $ For example, `curl -i -X GET -H "Content-Type: application/json"  http://localhost:4567/api/v1/apps`
+
+          Response to json:
+          
+          [
+            {
+              "id": 1,
+              "name": "tinkoff",
+              "category": "Finance",
+              "dowload_count": "388982",
+              "author": "https://www.tinkoff.ru",
+              "author_email": "support@tinkoff.ru",
+              "created_at": "2019-07-09 22:02:21 +0400"
+            }
+          ]
+
