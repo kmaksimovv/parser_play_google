@@ -26,7 +26,8 @@ Bug reports and pull requests are welcome on GitHub at `https://github.com/kmaks
 
 ## Api
 1. Run server.rb
-  $ For example, `curl -i -X GET -H "Content-Type: application/json"  http://localhost:4567/api/v1/apps`
+  $ For example, run command
+  `curl -i -X GET -H "Content-Type: application/json"  http://localhost:4567/api/v1/apps`
 
           Response to json:
           
