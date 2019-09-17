@@ -24,3 +24,7 @@ def app_history_ratings(app, *app_ratings)
   puts "##########################"
   app_ratings.each { |rat| puts "rating: #{rat.rating}, date: #{rat.created_at}" }
 end
+
+def display_error(attr)
+  puts "No attribute #{attr} found on page"
+end

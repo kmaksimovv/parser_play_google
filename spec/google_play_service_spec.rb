@@ -28,7 +28,7 @@ describe 'GooglePlayService::ParsePageApp' do
     end
 
     it 'testing get dowloads app`s' do
-      expect(@gps.dowloads).to eq @doc.css('span.EymY4b')[0].children[1].content.strip.delete(',')
+      expect(@gps.dowload_count).to eq @doc.css('span.EymY4b')[0].children[1].content.strip.delete(',')
     end
 
     it 'testing get author app`s' do
